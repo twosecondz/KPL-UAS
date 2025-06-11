@@ -26,56 +26,84 @@ Aplikasi Sanger dilengkapi dengan berbagai fitur untuk memberikan pengalaman pen
     * Konfirmasi Keberhasilan Pembayaran (`PaymentSuccessActivity`).
 * **Integrasi Peta (Direncanakan):** Meminta akses lokasi untuk fitur pengantaran.
 
-## 🛠️ Teknologi yang Digunakan
+---
 
-Proyek ini dibangun menggunakan teknologi dan library modern dalam ekosistem pengembangan Android.
+## 📱 Appium Test Automation
 
-* **Bahasa Pemrograman:** Kotlin & Java
-* **Arsitektur:** Android SDK
-* **IDE:** Android Studio
-* **UI/UX:**
-    * Material Design 3
-    * XML Layouts dengan ConstraintLayout
-* **Backend & Database:**
-    * **Firebase Authentication** untuk manajemen pengguna.
-    * **Cloud Firestore** sebagai database NoSQL untuk menyimpan data pengguna.
-    * **Firebase Storage** untuk menyimpan file gambar (foto profil).
-* **Library Pihak Ketiga:**
-    * **Glide** untuk memuat dan menampilkan gambar secara efisien.
-    * **CircleImageView** untuk menampilkan foto profil dalam bentuk lingkaran.
-* **Manajemen Dependency:** Gradle dengan Version Catalogs (`libs.versions.toml`).
+Proyek ini menggunakan **Appium** untuk mengotomatisasi pengujian aplikasi mobile. Dirancang untuk menguji fitur-fitur utama dari aplikasi secara otomatis di perangkat Android/iOS.
 
-## ⚙️ Instalasi & Konfigurasi
+---
 
-Untuk menjalankan proyek ini di komputer lokal, ikuti langkah-langkah berikut:
+### 📂 Informasi File APK
 
-1.  **Prasyarat:**
-    * Android Studio (Direkomendasikan versi Iguana | 2023.2.1 atau lebih baru).
-    * JDK 21.
+**app-debug.apk** adalah file aplikasi Sanger kami. Berikut adalah source code Mobile App dari Sanger: https://github.com/twosecondz/SANGER
 
-2.  **Clone Repositori:**
-    ```bash
-    git clone [https://github.com/twosecondz/SANGER.git](https://github.com/twosecondz/SANGER.git)
-    ```
+---
 
-3.  **Buka Proyek:**
-    * Buka Android Studio.
-    * Pilih `Open` dan arahkan ke folder `SANGER` yang baru saja Anda clone.
+### 🚀 Cara Menjalankan Test
 
-4.  **Konfigurasi Firebase (Langkah Krusial):**
-    * Proyek ini memerlukan koneksi ke Firebase agar bisa berfungsi. Anda harus membuat proyek Firebase Anda sendiri.
-    * Buka [Firebase Console](https://console.firebase.google.com/), buat proyek baru.
-    * Daftarkan aplikasi Android Anda dengan nama paket (applicationId): `com.example.sangerfinal`.
-    * Unduh file `google-services.json` yang disediakan.
-    * Salin file `google-services.json` tersebut dan tempelkan ke dalam direktori `app/` pada proyek Anda di Android Studio.
+#### 1. Persiapan
 
-5.  **Sinkronisasi Gradle:**
-    * Setelah menambahkan `google-services.json`, Android Studio mungkin akan meminta Anda untuk melakukan **Gradle Sync**. Klik **"Sync Now"**.
-    * Jika tidak muncul, klik ikon gajah dengan panah biru (Sync Project with Gradle Files) di toolbar atas.
+* Install Appium:
 
-6.  **Build dan Jalankan:**
-    * Setelah proses sync selesai, klik `Build > Rebuild Project` untuk memastikan semua sudah benar.
-    * Jalankan aplikasi dengan menekan tombol Play (segitiga hijau).
+```bash
+npm install -g appium@1.22.3
+```
+
+* Install Appium Doctor untuk cek dependensi:
+
+```bash
+npm install -g appium-doctor
+appium-doctor
+```
+
+* Install dependencies project:
+
+```bash
+npm install
+```
+
+#### 2. Jalankan Appium Server
+
+```bash
+appium
+```
+
+#### 3. Jalankan Tes
+
+Klik kanan pada code > Run As > Pilih jenis file (java)
+
+
+---
+
+### 🧪Teknologi yang Digunakan
+
+* **Appium V.01** – Mobile test automation framework
+* **WebDriver** – Untuk interaksi UI
+* **Emulator** – Android
+* **AndroidStudio** - Emulator
+
+---
+
+### ⚙️ Desired Capabilities
+
+Contoh konfigurasi (JSON):
+
+```json
+{
+  "platformName": "Android",
+  "appium:appPackage": "com.example.sangerfinal",
+  "appium:deviceName": "emulator-5554",
+  "appium:automationName": "UiAutomator2",
+  "appium:appActivity": "com.example.sangerfinal.SplashActivity",
+  "appium:noReset": true
+}
+```
+
+---
+
+### 📸 Screenshot
+
 
 ## 👥 Tim Pengembang
 
