@@ -1,34 +1,4 @@
-# Sanger - Aplikasi Pemesanan Biji Kopi ☕
-
-Aplikasi mobile untuk mempermudah proses pemesanan biji kopi berkualitas langsung dari petani dan pelaku usaha di Indonesia.
-
-## 📜 Tentang Proyek
-
-**Sanger** adalah sebuah aplikasi mobile berbasis Android yang dikembangkan sebagai solusi modern atas tantangan yang sering dihadapi oleh para pelaku usaha dan pecinta kopi, yaitu kesulitan untuk mendapatkan akses terhadap biji kopi berkualitas secara praktis dan efisien. Proses pencarian dan pembelian yang seringkali masih bersifat manual memakan banyak waktu dan tenaga.
-
-Untuk mengatasi masalah tersebut, **Sanger** hadir sebagai sebuah platform modern yang dirancang untuk mempermudah proses pemesanan biji kopi secara online. Melalui aplikasi ini, pengguna dapat dengan mudah mencari, memilih, dan memesan beragam jenis biji kopi terbaik langsung dari genggaman mereka, untuk kemudian diantarkan langsung ke lokasi tujuan.
-
-Proyek ini dikembangkan untuk memenuhi tugas akhir mata kuliah **Pemrograman Berbasis Mobile**.
-
-## ✨ Fitur Utama
-
-Aplikasi Sanger dilengkapi dengan berbagai fitur untuk memberikan pengalaman pengguna yang lengkap:
-
-* **Splash Screen & Alur Onboarding:** Pengalaman pertama yang mulus bagi pengguna baru dengan alur perkenalan aplikasi yang informatif.
-* **Autentikasi Pengguna:** Sistem registrasi dan login yang aman menggunakan Firebase Authentication.
-* **Manajemen Profil:**
-    * Melihat data profil personal.
-    * Mengedit informasi profil (nama, email, biodata).
-    * Mengganti foto profil dengan mengunggah gambar dari galeri perangkat.
-* **Alur Pemesanan:**
-    * Keranjang Belanja (`CartActivity`).
-    * Pilihan Metode Pembayaran (`PaymentMethodActivity`).
-    * Konfirmasi Keberhasilan Pembayaran (`PaymentSuccessActivity`).
-* **Integrasi Peta (Direncanakan):** Meminta akses lokasi untuk fitur pengantaran.
-
----
-
-## 📱 Appium Test Automation
+# 📱 Appium Test Automation
 
 Proyek ini menggunakan **Appium** untuk mengotomatisasi pengujian aplikasi mobile. Dirancang untuk menguji fitur-fitur utama dari aplikasi secara otomatis di perangkat Android/iOS.
 
@@ -104,6 +74,35 @@ Contoh konfigurasi (JSON):
 
 ### 📸 Screenshot
 
+# Sanger - Aplikasi Pemesanan Biji Kopi ☕
+
+Aplikasi mobile untuk mempermudah proses pemesanan biji kopi berkualitas langsung dari petani dan pelaku usaha di Indonesia.
+
+## 📜 Tentang Proyek
+
+**Sanger** adalah sebuah aplikasi mobile berbasis Android yang dikembangkan sebagai solusi modern atas tantangan yang sering dihadapi oleh para pelaku usaha dan pecinta kopi, yaitu kesulitan untuk mendapatkan akses terhadap biji kopi berkualitas secara praktis dan efisien. Proses pencarian dan pembelian yang seringkali masih bersifat manual memakan banyak waktu dan tenaga.
+
+Untuk mengatasi masalah tersebut, **Sanger** hadir sebagai sebuah platform modern yang dirancang untuk mempermudah proses pemesanan biji kopi secara online. Melalui aplikasi ini, pengguna dapat dengan mudah mencari, memilih, dan memesan beragam jenis biji kopi terbaik langsung dari genggaman mereka, untuk kemudian diantarkan langsung ke lokasi tujuan.
+
+Proyek ini dikembangkan untuk memenuhi tugas akhir mata kuliah **Pemrograman Berbasis Mobile**.
+
+## ✨ Fitur Utama
+
+Aplikasi Sanger dilengkapi dengan berbagai fitur untuk memberikan pengalaman pengguna yang lengkap:
+
+* **Splash Screen & Alur Onboarding:** Pengalaman pertama yang mulus bagi pengguna baru dengan alur perkenalan aplikasi yang informatif.
+* **Autentikasi Pengguna:** Sistem registrasi dan login yang aman menggunakan Firebase Authentication.
+* **Manajemen Profil:**
+    * Melihat data profil personal.
+    * Mengedit informasi profil (nama, email, biodata).
+    * Mengganti foto profil dengan mengunggah gambar dari galeri perangkat.
+* **Alur Pemesanan:**
+    * Keranjang Belanja (`CartActivity`).
+    * Pilihan Metode Pembayaran (`PaymentMethodActivity`).
+    * Konfirmasi Keberhasilan Pembayaran (`PaymentSuccessActivity`).
+* **Integrasi Peta (Direncanakan):** Meminta akses lokasi untuk fitur pengantaran.
+
+---
 
 ## 👥 Tim Pengembang
 
